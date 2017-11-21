@@ -1,0 +1,10 @@
+class A extends Tread
+class B implements Runnable
+setDemon();
+yield();
+setPriority();
+join();
+wait();
+notify();
+interrupt();
+ExecutorService;

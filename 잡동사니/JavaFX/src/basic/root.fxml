@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox spacing="10.0" xmlns:fx="http://javafx.com/fxml">
+<!-- xmlns:fx="http://javafx.com/fxml"의 의미는 xmlns안에서 fx라고만 써고 뒤의 
+url과 같은 역할을 할 수 있게 해주는 것이다. 네임스페이스라고 한다. 생성자를 만들 때
+멤버변수는 this.으로 표시하고 매개변수는 그냥 매개변수명으로 쓰는 것과 같다. -->
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <children>
+      <TextField />
+      <Button text="확인" />
+   </children>
+</HBox>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="380.0" prefWidth="485.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="input_control.RootController">
+   <children>
+      <Label layoutX="22.0" layoutY="36.0" text="제목" />
+      <Label layoutX="22.0" layoutY="69.0" text="비밀번호" />
+      <Label layoutX="22.0" layoutY="104.0" text="공개" />
+      <Label layoutX="240.0" layoutY="104.0" text="게시종료" />
+      <Label layoutX="22.0" layoutY="135.0" text="내용" />
+      <TextField fx:id="txtTitle" layoutX="109.0" layoutY="32.0" prefHeight="23.0" prefWidth="356.0" />
+      <PasswordField fx:id="txtPW" layoutX="109.0" layoutY="65.0" prefHeight="23.0" prefWidth="125.0" />
+      <DatePicker fx:id="dateExit" layoutX="306.0" layoutY="100.0" prefHeight="23.0" prefWidth="158.0" />
+      <ComboBox fx:id="comboPublic" layoutX="109.0" layoutY="100.0" prefHeight="23.0" prefWidth="125.0" />
+      <TextArea fx:id="txtContent" layoutX="22.0" layoutY="154.0" prefHeight="132.0" prefWidth="440.0" />
+      <Separator layoutX="13.0" layoutY="320.0" prefHeight="0.0" prefWidth="456.0" />
+      <Button fx:id="btnReg" layoutX="189.0" layoutY="340.0" mnemonicParsing="false" onAction="#handleBtnReg" text="등록" />
+      <Button fx:id="btnCancle" layoutX="252.0" layoutY="340.0" mnemonicParsing="false" onAction="#handleBtnCancle" text="취소" />
+   </children>
+</AnchorPane>

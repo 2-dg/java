@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="250.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="property.RootController">
+   <top>
+      <Label fx:id="lbSize" text="Font Size : 1" BorderPane.alignment="CENTER" />
+   </top>
+   <left>
+      <ProgressIndicator fx:id="piDisplay" progress="0.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets top="80.0" />
+         </padding>
+      </ProgressIndicator>
+   </left>
+   <center>
+      <Label fx:id="lbMsg" text="JavaFX" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Label>
+   </center>
+   <bottom>
+      <Slider fx:id="slider" majorTickUnit="10.0" minorTickCount="4" showTickLabels="true" showTickMarks="true" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

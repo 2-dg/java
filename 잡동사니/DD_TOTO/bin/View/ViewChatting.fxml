@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="260.0" prefWidth="365.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextArea id="txtAserver" layoutX="7.0" layoutY="8.0" prefHeight="203.0" prefWidth="335.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextArea>
+      <TextField id="txtFserver" layoutX="7.0" layoutY="215.0" prefHeight="23.0" prefWidth="242.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <Button id="btnChatExit" layoutX="302.0" layoutY="215.0" mnemonicParsing="false" text="종료" />
+      <Button id="btnChatSend" layoutX="252.0" layoutY="215.0" mnemonicParsing="false" text=" 전송" />
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

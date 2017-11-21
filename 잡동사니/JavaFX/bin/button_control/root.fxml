@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="150.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="button_control.RootController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="89.0" prefWidth="87.0" spacing="10.0">
+         <children>
+            <CheckBox fx:id="chkBox1" mnemonicParsing="false" onAction="#handleChkAction" text="안경" />
+            <CheckBox fx:id="chkBox2" mnemonicParsing="false" onAction="#handleChkAction" text="모자" />
+         </children>
+      </VBox>
+      <Separator layoutX="197.0" layoutY="14.0" orientation="VERTICAL" prefHeight="82.0" prefWidth="0.0" />
+      <ImageView fx:id="img1" fitHeight="82.0" fitWidth="100.0" layoutX="87.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/geek.gif" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER_LEFT" layoutX="210.0" layoutY="14.0" prefHeight="82.0" prefWidth="100.0" spacing="10.0">
+         <children>
+            <RadioButton fx:id="radBtn1" mnemonicParsing="false" selected="true" text="BubbleChart" userData="BubbleChart">
+               <toggleGroup>
+                  <ToggleGroup fx:id="group" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="radBtn2" mnemonicParsing="false" text="BarChart" toggleGroup="$group" userData="BarChart"/>
+            <RadioButton fx:id="radBtn3" mnemonicParsing="false" text="AreaChart" toggleGroup="$group" userData="AreaChart"/>
+         </children>
+      </VBox>
+      <ImageView fx:id="img2" fitHeight="96.0" fitWidth="100.0" layoutX="310.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/AreaChart.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnExit" layoutX="179.0" layoutY="103.0" mnemonicParsing="false" onAction="#handleBtnExit" prefHeight="35.0" prefWidth="24.0">
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/exit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+   <padding>
+      <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+   </padding>
+</AnchorPane>

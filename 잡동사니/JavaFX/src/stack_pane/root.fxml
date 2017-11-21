@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.StackPane?>
+
+
+<StackPane prefHeight="300" prefWidth="400" xmlns:fx="http://javafx.com/fxml" fx:controller="stack_pane.RootController">
+   <children>
+      <AnchorPane fx:id="anchorPane" prefHeight="200" prefWidth="400" visible="false">
+         <children>
+            <Button layoutX="152" layoutY="139" onAction="#handleBtn1SceneChange" text="1번화면입니다" textAlignment="CENTER" />
+         </children>
+      </AnchorPane>
+      <BorderPane fx:id="borderPane" prefHeight="200.0" prefWidth="200.0">
+         <center>
+            <Button onAction="#handleBtn2SceneChange" text="2번화면입니다" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

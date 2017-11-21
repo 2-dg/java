@@ -1,0 +1,16 @@
+package join;
+
+public class SumThread extends Thread {	
+	private long sum;
+	
+	public long getSum() {
+		return sum;
+	}
+	public void run() {
+		for(int i=1; i<=100; i++) {
+			sum+=i;
+		}
+		System.out.println("합계 계산 완료");
+	}
+}
+

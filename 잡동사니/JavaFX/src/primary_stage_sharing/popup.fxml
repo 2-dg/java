@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+
+
+<HBox alignment="CENTER_LEFT" style="-fx-background-color: black; -fx-background-radius: 20;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <ImageView id="imgMassage" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+      <Label id="lblMsg" style="-fx-text-fill: white;" text="공지사항을 알려드립니다" textFill="WHITE">
+         <HBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </HBox.margin>
+      </Label>
+   </children>
+</HBox>
